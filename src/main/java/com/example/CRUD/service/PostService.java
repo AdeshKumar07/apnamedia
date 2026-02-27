@@ -29,6 +29,9 @@ public class PostService {
         dto.setContent(post.getContent());
         dto.setCreatedAt(post.getCreatedAt());
         dto.setMediaUrl(post.getMediaUrl());
+        dto.setLikeCount(post.getLikes().size());
+        dto.setCommentsCount(post.getComments().size());
+
         return dto;
     }
 

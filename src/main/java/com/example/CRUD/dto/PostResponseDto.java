@@ -1,3 +1,4 @@
+
 package com.example.CRUD.dto;
 
 import lombok.AllArgsConstructor;
@@ -14,5 +15,7 @@ public class PostResponseDto {
     private String mediaUrl ;
     private LocalDateTime createdAt ;
     private String username ;
+    private int likeCount ;
+    private int commentsCount ;
 
 }

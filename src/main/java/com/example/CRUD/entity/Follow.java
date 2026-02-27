@@ -14,6 +14,9 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
+//here some work for pending follow request
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = {"follwers_id","following_id"}))//define in the db follow_id & following_id ka combination unique ho
 public class Follow {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
